@@ -63,7 +63,8 @@ namespace CL.RegAsm.Lib
         /// <seealso cref="CLREGASM_PER_USER_ENV_VAR"/>
         /// <seealso cref="REGASM_PER_USER_ENV_VAR"/>
         /// <seealso cref="CLREGASM_ENV_VARS_VALUE"/>
-        internal static readonly string[] CLREGASM_PER_USER_ENV_VARS = new string[] {
+//FIXED COMPILATION ERROR: internal -> public
+        public static readonly string[] CLREGASM_PER_USER_ENV_VARS = new string[] {
             CLREGASM_PER_USER_ENV_VAR,
             REGASM_PER_USER_ENV_VAR,
         };
@@ -71,7 +72,8 @@ namespace CL.RegAsm.Lib
         /// <summary>
         /// Value set for all environment variables set by CLRegAsm.
         /// </summary>
-        internal const string CLREGASM_ENV_VARS_VALUE = "1";
+//FIXED COMPILATION ERROR: internal -> public
+        public const string CLREGASM_ENV_VARS_VALUE = "1";
 
         /// <summary>
         /// Checks whether the class library is currently being registered by CLRegAsm.
